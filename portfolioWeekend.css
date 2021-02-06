@@ -1,0 +1,142 @@
+/* reset */
+* {
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+:root{
+    --primary-color:#b1dcf4;
+    --secondary-color:#6087C5;
+    --main-lements-height: 70%;
+    --main-shape:50%;
+    --loader-border:6px;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&display=swap');
+
+
+body{
+    font-family: 'Gloria Hallelujah', cursive;
+    background-color:var(--primary-color);
+}
+
+    #headPic{
+    background-image:url(/bg-img.jpeg);
+    background-position:bottom;
+    background-repeat: no-repeat;
+    background-size:100%;
+    height:75vh;
+    width:100%;  
+    border: var(--secondary-color) 1px solid;
+    display:grid;
+    grid-template-columns: repeat, (3,1fr);
+    grid-row: repeat, (2,1fr);
+    
+
+}
+#name{
+    font-size: 50px;
+    grid-row: 1/ span 1;
+    grid-column: 1/ span 1;
+    color: white;
+    
+}
+#arrow{
+    grid-row: 2/ span 2;
+    font-size:30px;
+    color: white;
+    
+}
+.bottomcontainer{
+    min-height: 30vh;
+    height: 30vh;
+    width:100%;
+    display: flex;
+    flex-direction: row;
+    justify-content:center;
+    align-items: center;
+    
+    
+}
+
+#about{
+   
+    width:50%;
+    height: var(--main-lements-height);
+    border: var(--secondary-color) 1px solid;
+    border-radius: 30px 30px 30px 30px;
+    font-size: 15px;
+    color:var(--secondary-color);
+    padding:5px;
+    text-align: center;
+    position: relative;
+    padding: 5px;
+    margin:5px 10px 10px 10px;
+    
+
+}
+#img{
+    background-image:url(/388805_10150348785341536_631196232_n.jpg);
+    width:10%;
+    height: var(--main-lements-height);
+    border:var(--secondary-color) 1px dotted;
+border-radius: var(--main-shape);
+border: var(--secondary-color) 1px solid;
+border-radius: 50px;
+opacity: 75%;
+position: relative;
+margin:5px 10px 10px 10px;
+
+}
+
+.loader {
+    
+    border: var(--loader-border) solid white;
+    border-radius: var(--main-shape);
+    border-top: var(--loader-border) solid var(--secondary-color);
+    width: 60px;
+    height: 60px;
+    -webkit-animation: spin 2s linear infinite; /* Safari */
+    animation: spin 1s linear infinite;
+    position: relative;
+  }
+  .loader2 {
+    
+    border: var(--loader-border) solid  var(--secondary-color);
+    border-radius: var(--main-shape);
+    border-top: var(--loader-border) solid var(--secondary-color);
+    width: 60px;
+    height: 60px;
+    position: relative;
+  }
+  
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+
+.bottomcontainer h3{
+    size: 50px;
+    margin: 3px;
+    font-family: 'Gloria Hallelujah', cursive;
+    margin:10px;
+    position: relative;
+
+}
+
+
+
+  /* width:10%;
+    height:80%;
+    background-image:url(/photo_2021-02-05\ 20.58.28.jpeg);
+    border-radius: 30px 30px;
+    
+
+
+}
+
+
+
+
+ 
